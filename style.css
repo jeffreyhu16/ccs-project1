@@ -1,0 +1,133 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 18px;
+    font-family: Ubuntu, sans-serif;
+}
+
+h1, h2, p, ul {
+    margin-top: 0;
+}
+
+h1 {
+    font-family: Lora;
+    font-size: 33px;
+    font-weight: 400;
+    color: #143774;
+    margin-bottom: 0em;
+}
+
+p {
+    color: #707070;
+
+}
+
+header {
+    background: #F8F8F8;
+    padding: 2em 0;         /* not sure */
+}
+
+.subtitle {
+    color: #1792D2;
+    font-size: .75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: min(90%, 900px)
+}
+
+.container-nav {
+    /* text-align: center; */
+    /* padding: 48px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;       /* not sure */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;               /* not sure */
+    margin-bottom: 0;
+    justify-content: center;  /* not sure */
+}
+
+nav li {
+    margin-left: 1.5em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #717171;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    padding: .25em 0;       /* not sure */
+}
+
+nav a:hover,
+nav a:focus {
+    color: #1792d2;
+}
+
+.current-page {
+    border-bottom: 2px solid #717171;
+}
+
+.current-page:hover {
+    color: #707070;
+}
+
+@media (max-width: 675px) {
+    h1 {
+        font-family: Lora;
+        font-size: 33px;
+        color: #143774;
+        margin-bottom: 0.1em;
+    }
+    
+    h2 {
+
+    }
+
+    p {
+        color: #707070;
+        margin-bottom: 2em;
+
+    }
+
+    .container-nav {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .subtitle {
+        
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 0;
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: .5em 0;
+    }
+
+    nav a {
+        
+    }
+
+    .current-page {
+        
+    }
+}
